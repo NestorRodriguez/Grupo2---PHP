@@ -1,0 +1,28 @@
+create database proyecto;
+
+
+use proyecto;
+
+
+create table usuarios(
+
+id int(6) primary key auto_increment,
+
+nombre varchar(30) not null,
+
+apellido varchar(80) not null,
+
+correo varchar(100) not null,
+
+usuario varchar(20) not null,
+
+clave varchar(20)not null);
+
+
+
+INSERT INTO usuarios(nombre, apellido, correo, usuario, clave) 
+VALUES ('Kenny', 'Villamarín', 'kjvillamarin@prointech.com.co', 'citoyens', '123456');
+
+
+
+select * from usuarios;

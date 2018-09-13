@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos/estilosPrincipal.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="validar.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<script>
+			$(document).ready(function(){ // OCULTAR LA CAJA DE REGISTRO
+				$("#caja_registro").hide();
+
+			    $("#registrarse").click(function(){ // DESAPARECER CAJA DE LOGIN Y APARECER LA DE REGISTRO
+			        $("#caja_login").slideToggle();
+			        $("#caja_registro").slideToggle();
+			    });
+
+			    $("#loguearse").click(function(){// DESAPARECER CAJA DE REGISTRO Y APARECER LA DE OGIN
+			        $("#caja_login").slideToggle();
+			        $("#caja_registro").slideToggle();
+			    });
+
+			});
+		</script>
+</head>
+<body> 
+    <div id="caja_login">
+        <div class="row">
+            <form action="sesion.php" method="post" class="form-register" >
+                <h2 class="for__titulo">Iniciar sesión</h2>
+                <div class="contenedor-inputs">
+                    <input type="text" id="usuario1" name="usuario1" placeholder="Usuario" class="input-100" required>
+                    <input type="password" id="clave1" name="clave1" placeholder="Clave" class="input-100" required>
+                    <input type="submit" name="enviar" value="Enviar" class="btn-enviar">
+                    <a id="registrarse" href="#" class="otro">Crear cuenta</a>
+                </div>
+            </form>	                 
+        </div>        
+    </div>
+
+    <div id="caja_registro">
+        <div class="row">
+            <form action="registrar.php" method="post" class="form-register" onsubmit="return validar();">
+                <h2 class="for__titulo">Crear cuenta</h2>
+                <div class="contenedor-inputs">
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="input-100" required>
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellido" class="input-100" required>
+                    <input type="email" id="correo" name="correo" placeholder="Correo" class="input-100" required>
+                    <input type="text" id="usuario" name="usuario" placeholder="Usuario" class="input-100" required>
+                    <input type="password" id="clave" name="clave" placeholder="Clave" class="input-100" required>
+                    <input type="submit" name="enviar" value="Enviar" class="btn-enviar"> 
+                    <a id="loguearse" href="#" class="otro">Iniciar sesión</a>
+                </div>                
+            </form>	                 
+        </div>
+    </div>      
+</body>
+</html>
