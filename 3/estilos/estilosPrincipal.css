@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+/*------------------------------------Estilos formulario------------------------------------*/
+
+.form-register{
+    width: 85%;
+    max-width: 500px;
+    margin: auto;
+    background: rgb(18, 146, 188);
+    border-radius: 7px;
+    padding-bottom: 10px;
+    box-shadow: rgba(0,0,0,0.5) 10px 10px 10px;
+}
+.for__titulo{
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    font-weight: 100;
+    font-size: 30px;
+    color: white;
+    text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+}
+.contenedor-inputs{
+    padding: 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.otro{
+    margin:auto;
+    text-decoration: none;
+    text-decoration-color: black;
+}
+.input-48{
+    width: 48%;
+}
+.input-100{
+    width: 100%;
+}
+input{
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid darkgray;
+}
+.btn-enviar{
+    margin: auto;   
+    background: #fff;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.row{
+    background-size:100% 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}

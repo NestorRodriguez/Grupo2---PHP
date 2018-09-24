@@ -1,0 +1,1 @@
+CREATE TABLE Container(id INT NOT NULL PRIMARY KEY AUTO_INCREMENT, Cantidad int(50), Peso VARCHAR(20), Altura int(30), Largo int(30),  Ancho int(30), T. container VARCHAR(20), T. estiba VARCHAR(20))
